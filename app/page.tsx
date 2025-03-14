@@ -12,8 +12,8 @@ export default function Home() {
       {/* Header/Navigation */}
       <header className="sticky top-0 z-10 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
-          <Link href="/" className="font-bold">
-            Your Name
+          <Link href="/" className="font-bold text-4xl">
+          🏡
           </Link>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium hover:text-primary">
@@ -66,9 +66,14 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 md:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Hi, Omar Rafiq</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">Hi, I'm Omar Rafiq 📚 🏀 🧑🏽‍💻</h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  I'm studying Computer Science at California State University, Fullerton.
+                  I'm currently majoring in Computer Science with a minor in Business 
+                  Data Analytics at California State University, Fullerton. 
+                  I'm particularly interested in full stack development, 
+                  machine learning and data science. Outside of school, 
+                  you'll probably find me playing basketball, reading a book, at the gym, 
+                  or trying to build cool things.
                 </p>
               </div>
               <div className="flex gap-2">
@@ -97,7 +102,7 @@ export default function Home() {
             <div className="flex justify-center">
               <div className="relative h-80 w-80 overflow-hidden rounded-full border-4 border-background bg-muted">
                 <Image
-                  src="/omarrafiq.jpg"
+                  src="/omarraf.jpg"
                   alt="My profile picture"
                   fill
                   className="object-cover"
