@@ -192,45 +192,6 @@ export default function Home() {
         </section>
 
 
-        {/* Blog Section */}
-        <section id="blog" className="container py-12 md:py-24 lg:py-32">
-          <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
-            <h2 className="text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">Blog</h2>
-            <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-              Thoughts, ideas, and insights I've shared.
-            </p>
-          </div>
-          <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3 mt-16">
-            {[1, 2, 3].map((post) => (
-              <Card key={post} className="overflow-hidden">
-                <div className="relative aspect-video">
-                  <Image
-                    src={`/placeholder.svg?height=200&width=400&text=Blog+${post}`}
-                    alt={`Blog post ${post}`}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <CardContent className="p-4">
-                  <div className="text-sm text-muted-foreground mb-2">March {post}, 2023</div>
-                  <h3 className="text-xl font-bold">Blog Post Title {post}</h3>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    A brief summary of what this blog post is about and why someone might want to read it.
-                  </p>
-                  <Button variant="link" className="px-0 mt-2" asChild>
-                    <Link href="#">Read More</Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          <div className="flex justify-center mt-12">
-            <Button variant="outline" asChild>
-              <Link href="#">View All Posts</Link>
-            </Button>
-          </div>
-        </section>
-
         {/* Contact Section */}
         <section id="contact" className="container py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="mx-auto grid gap-8 md:grid-cols-2 md:gap-12 max-w-5xl">
@@ -330,16 +291,8 @@ export default function Home() {
       <footer className="border-t py-6 md:py-0">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
+            © {new Date().getFullYear()} Omar Rafiq. All rights reserved.
           </p>
-          <div className="flex gap-4">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-foreground">
-              Terms of Service
-            </Link>
-          </div>
         </div>
       </footer>
     </div>
