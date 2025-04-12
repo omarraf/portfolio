@@ -402,7 +402,6 @@ const programmingLangs = [
   "HTML/CSS",
 ]
 
-const backendSkills = ["Node.js", "Express", "Python", "Django", "MongoDB", "PostgreSQL", "GraphQL", "REST API Design"]
 
 const toolsSkills = ["Git & GitHub", "Docker", "AWS", "Figma", "CI/CD", "Agile Methodologies", "Postman", "Bash", "Command Line", ]
 
