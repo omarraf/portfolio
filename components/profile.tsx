@@ -8,10 +8,9 @@ export default function Profile() {
   // Array of roles for the typing animation
   const roles = [
     "Full Stack Developer",
-    "CS Student",
+    "Computer Science Student",
     "Open Source Contributor",
     "Software Engineer",
-    "UI/UX Enthusiast",
   ]
 
   // Use the typing animation hook
@@ -37,7 +36,7 @@ export default function Profile() {
         whileHover={{ scale: 1.05 }}
       >
         <Image
-          src="/placeholder.svg?height=192&width=192"
+          src="/omarraf.jpg?height=192&width=192"
           alt="Profile picture"
           fill
           className="object-cover"
@@ -51,7 +50,7 @@ export default function Profile() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          Jane Doe
+          Omar Rafiq
         </motion.h1>
         <motion.h2
           className="text-xl text-muted-foreground mb-4 h-7 flex items-center justify-center md:justify-start"
